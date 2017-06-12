@@ -16,17 +16,6 @@ Stack.prototype.peek = function() {
   return this.head.val;
 }
 
-
-//WHITEBOARDING: determine if a string has matching opening and closing brackets/parens
-
-func(string) {
-  iterate through string
-  for each - see if it is an opening bracket, if it is, add it to the stack
-  if the next one is a closing bracket, pop the openening bracket off the stack
-}
-
-
-
 let stringOne = '{}{{}}';
 
 Stack.prototype.closeBracket = function(string) {

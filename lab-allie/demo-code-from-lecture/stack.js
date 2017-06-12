@@ -1,5 +1,4 @@
 'use strict';
-
 const Stack = module.exports = require('./linked-list.js'); 
 
 Stack.prototype.push = function() { 
@@ -19,7 +18,6 @@ Stack.prototype.peek = function() {
 let stringOne = '{}{{}}';
 
 Stack.prototype.closeBracket = function(string) {
-  
   for(let i = 0; i < string.length; i++) {  
     if (stringOne.charAt(i) === '{' || stringOne.charAt(i) === '(' || stringOne.charAt(i) === '[') {
       Stack.push(stringTwo.charAt(i));
@@ -33,9 +31,7 @@ Stack.prototype.closeBracket = function(string) {
 }
 
 let stringTwo = '{()}[)]'
-
 Stack.prototype.mixedCharacters = function(string) {
-
   let stackOne = new Stack();
   let stackTwo = new Stack();
   let stackThree = new Stack();
